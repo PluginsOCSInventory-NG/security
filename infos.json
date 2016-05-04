@@ -1,0 +1,10 @@
+{
+  "displayName" : "Security",
+  "author" : ["Nicolas DEROUET", "Gilles DUBOIS"],
+  "contributor" : [],
+  "supportedAgent" : ["Windows"],
+  "description" : {
+    "fr" : "Remonte les antivirus, firewall, AntiSpyware",
+    "en" : "Retrieve antivirus, firewall, AntiSpyware"
+  }
+}
