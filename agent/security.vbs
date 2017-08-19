@@ -1,6 +1,19 @@
-'' Plugin for OCS Inventory NG 2.x
-'' MsSecurityCenter 2.0.1 (30/08/2012)
-'' Nicolas DEROUET (nicolas.derouet[gmail]com)
+'----------------------------------------------------------
+' Plugin for OCS Inventory NG 2.x
+' Script :		Retrieve Ms Security Center informations
+' Version :		2.01
+' Date :		30/08/2012
+' Author :		Nicolas DEROUET (nicolas.derouet[gmail]com)
+' Contributor :	Stéphane PAUTREL (acb78.com)
+'----------------------------------------------------------
+' OS checked [X] on	32b	64b	(Professionnal edition)
+'	Windows XP		[X]	[ ]
+'	Windows 7		[X]	[X]
+'	Windows 8.1		[X]	[X]	
+'	Windows 10		[X]	[X]
+' ---------------------------------------------------------
+' NOTE : No checked on Windows Vista and Windows 8
+' ---------------------------------------------------------
 On Error Resume Next
  
 arrCat = Array("AntiVirus","Firewall","AntiSpyware")
@@ -71,16 +84,16 @@ End If
 Set objWMIService_AV = Nothing
  
 Sub writeXML(scSCV,scCat,scComp,scProd,scVer,scEna,scDate)
-  Wscript.Echo _
-  "<SECURITYCENTER>" & vbNewLine & _
-  "<SCV>" & scSCV & "</SCV>" & vbNewLine & _
-  "<CATEGORY>" & scCat & "</CATEGORY>" & vbNewLine & _
-  "<COMPANY>" & scComp & "</COMPANY>" & vbNewLine & _
-  "<PRODUCT>" & scProd & "</PRODUCT>" & vbNewLine & _
-  "<VERSION>" & scVer & "</VERSION>" & vbNewLine & _
-  "<ENABLED>" & scEna & "</ENABLED>" & vbNewLine & _
-  "<UPTODATE>" & scDate & "</UPTODATE>" & vbNewLine & _
-  "</SECURITYCENTER>"
+	Wscript.Echo _
+		"<SECURITYCENTER>" & vbNewLine & _
+		"<SCV>" & scSCV & "</SCV>" & vbNewLine & _
+		"<CATEGORY>" & scCat & "</CATEGORY>" & vbNewLine & _
+		"<COMPANY>" & scComp & "</COMPANY>" & vbNewLine & _
+		"<PRODUCT>" & scProd & "</PRODUCT>" & vbNewLine & _
+		"<VERSION>" & scVer & "</VERSION>" & vbNewLine & _
+		"<ENABLED>" & scEna & "</ENABLED>" & vbNewLine & _
+		"<UPTODATE>" & scDate & "</UPTODATE>" & vbNewLine & _
+		"</SECURITYCENTER>"
 End Sub
  
 Function dec2bin (n)
