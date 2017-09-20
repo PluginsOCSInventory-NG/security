@@ -2,7 +2,7 @@
 function plugin_version_security()
 {
 return array('name' => 'security',
-'version' => '1.0',
+'version' => '1.1',
 'author'=> 'Nicolas DEROUET, Gilles DUBOIS',
 'license' => 'GPLv2',
 'verMinOcs' => '2.2');
