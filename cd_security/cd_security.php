@@ -27,9 +27,11 @@
 	$tab_options['form_name']=$form_name;
 	$tab_options['table_name']=$table_name;
 	echo open_form($form_name);
-	$list_fields=array( 'Category' => 'CATEGORY',
+	$list_fields=array(
+	'Category' => 'CATEGORY',
 	'Company' => 'COMPANY',
 	'Product Name' => 'PRODUCT',
+	'Version' => 'VERSION',
 	'Enabled ?' => 'ENABLED',
 	'Up To Date ?' => 'UPTODATE',
 	);
