@@ -3,6 +3,8 @@
   "author" : ["Nicolas DEROUET", "Gilles DUBOIS"],
   "contributor" : [],
   "supportedAgent" : ["Windows"],
+  "version" : "2.0",
+  "licence" : "GPLv2",
   "description" : {
     "fr" : "Remonte les antivirus, firewall, AntiSpyware",
     "en" : "Retrieve antivirus, firewall, AntiSpyware"
