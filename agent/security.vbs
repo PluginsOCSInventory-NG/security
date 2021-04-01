@@ -78,7 +78,7 @@ if Not IsNull (objWMIService_AV) Then
       If Mid(dec2bin(objAVP.ProductState),12,1) = "1" Then productEnabled = "1"
  
       productUptoDate = "0"
-      If Mid(dec2bin(objAVP.ProductState),16,8) = "00000000" Then productUptoDate = "1"
+      If Mid(dec2bin(objAVP.ProductState),17,8) = "00000000" Then productUptoDate = "1"
  
       writeXML "2", arrCat(a), strCompanyName, objAVP.displayName, strVersionNumber, productEnabled, productUptoDate
       arrNbr(a) = arrNbr(a) + 1
